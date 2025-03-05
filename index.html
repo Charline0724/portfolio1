@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="topnav" id="myTopNav">
+            <div>
+                <a href="#header" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <a class="icon" id="icon" onclick="displayMenu()"><i class="fas fa-bars"></i></a>
+                <a href="#about">About</a>
+                <a href="#project">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contacts</a>
+            </div>
+        </div>
+        <div>
+            <div class="hero-img">
+                <div class="hero">
+                    <div><a href="#about">Get to know me</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="about" id="about">
+            <div class="left">
+                <img src="img/3.jpg" alt="my pic">
+            </div>
+            <div class="right">
+                <div class="about-content">
+                    <p class="about-heading">ABOUT</p>
+                    <hr/>
+                    <p>
+                       I'm Edmar C. Salvaloza, a 2nd-year BSIT student at Siargao Island Institute of Technology. I'm a slow learner, but I'm willing to learn everything about Bootstrap, JavaScript, and CSS. I have hidden knowledge, but I don't know where to hide it. I will do my best, better than my best.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="projects" id="project">
+            <div class="title"><h1>Projects</h1></div>
+            <div class="content">
+                <div class="project">
+                    <h1>Project 1</h1>
+                    <p>This project showcases my skills in web development, utilizing HTML, CSS, and JavaScript to create a responsive and interactive user experience.</p>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+        .projects {
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        
+        .title h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color:#5f09ff;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .project {
+            background: white;
+            border: 3px solid #5f09ff;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 1000px;
+            text-align: center;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project h1 {
+            font-size: 1.5em;
+            color: #5f09ff;
+        }
+        
+        .project p {
+            font-size: 1em;
+            color: #555;
+        }
+        </style>
+        
+        <section class="skills" id="skills">
+            <div class="title"><p>Skills</p></div>
+            <div class="content">
+                <div><i class="fab fa-html5 fa-5x"></i><br/><span>HTML</span></div>
+                <div><i class="fab fa-css3-alt fa-5x"></i><br/><span>CSS</span></div>
+                <div><i class="fab fa-js fa-5x"></i><br/><span>JavaScript</span></div>
+            </div>
+        </section>
+        
+        <section class="contact" id="contact">
+            <div class="title"><p>Contact Info</p></div>
+            <div class="content">
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Address: San Roque Pilar S.D.N</p>
+                    <p><i class="fas fa-phone"></i> Phone: +63 912 345 6789</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/demar.salvaloza" class="social-icon" title="Facebook">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="#" class="social-icon" title="Google Mail">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                </div>
+                <h1 class="divider">|</h1>
+                <div class="footer-text">&copy; Coded by Edmar C. Salvaloza</div>
+            </div>
+        </section>
+        
+        
+        <style>
+        /* Contact Section Styling */
+        .contact {
+            text-align: center;
+            padding: 40px;
+            background: #5f09ff;
+            color: white;
+            border-radius: 15px;
+            max-width: 15000px;
+            margin: 30px auto;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid white;
+        }
+        
+        .title p {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icon {
+            color: white;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+            color: #f4f4f4;
+        }
+        
+        .divider {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        .footer-text {
+            font-size: 1em;
+            font-weight: bold;
+        }
+        </style>
+        
+    </div>
+    
+    <div class="top-btn" id="top-btn"><a href="#header"><i class="fas fa-angle-double-up fa-2x"></a></i></div>
+    <script src="https://kit.fontawesome.com/7c551fd7c7.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
